@@ -10,9 +10,10 @@ $post = DB\get_by_id((int)$_GET['id'], $conn);
 
 if ( $post ) {
 	$post = $post[0];
-	//Filter through and display the Page in the view
-	$view_path = 'views/single.view.php';
-	include 'views/layout.php';
+ 	
+ 	view('single', array(
+	'post' => $post
+));
 }
 else {
 	header ('location:index.php');

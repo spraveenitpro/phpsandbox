@@ -1,5 +1,5 @@
 
-<h1>My Blog</h1>
+<h1>My Blog  by <?= $name; ?></h1>
 
 <?php foreach($posts as $post): ?>
 	

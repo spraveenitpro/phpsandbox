@@ -2,8 +2,18 @@
 
 function view($path, $data = null)
 {
-	include "views/{$path}.view.php";
+	if ($data) {
+		extract($data);
+	}
+	$path = $path . '.view.php';
+	include "views/layout.php";
+	
+	
 }
+
+// //Filter through and display the Page in the view
+// $view_path = 'views/index.view.php';
+// include 'views/layout.php';
 
 
 ?>

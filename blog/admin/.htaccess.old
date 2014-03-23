@@ -1,0 +1,5 @@
+AuthName "Administrators Only"
+AuthBasic Basic
+AuthUserFile /home/praveen/Documents/Code/php/sandbox/blog/.htpasswd
+require valid-user
+
